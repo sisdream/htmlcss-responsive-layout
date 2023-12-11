@@ -4,20 +4,104 @@
     box-sizing: border-box;
 }
 
+/* HEADER*/
+
 #header{
     background-color: #0084fd;
     color: #fff;
-    padding: 1rem;
-    
+    padding: 1rem;  
 }
 
 .container{
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 6rem;
 }
 
-/* .logo,
 .nav{
-   
-} */
+    display: block;
+}
+
+.icona{
+    display: none;
+}
+
+/* MAIN */
+
+/* SEZIONE DEMO */
+#demo{
+    padding: 3rem 6rem;
+}
+
+.row{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: calc(100% / 3 - 6rem);
+    background-color: #b5ddff;
+    padding: 1rem;
+}
+
+.card-app{
+    width: calc(100% / 3 * 2);
+    display: flex;
+}
+
+.card-left,
+.card-right{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LATO RESPONSIVE */
+@media screen and (max-width: 576px) {
+    .nav{
+        display: none;
+    }
+    .icona{
+        display: block;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    .icona{
+        display: block;
+    }
+    .card-app{
+        display: block;
+    }
+}
