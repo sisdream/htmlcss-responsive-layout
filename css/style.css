@@ -56,12 +56,26 @@
     width: 50%;
 }
 
+/* SEZIONE STRATEGIA */
 
+#strategic{
+    background-color: #9792e4;
+}
 
+#strategic .container{
+    align-items: flex-end;
+    justify-content: space-around;
+}
 
+.planning,
+.developer{
+    width: 40%;
+}
 
-
-
+.deve{
+    background-color: #fff;
+    color: #6c6c6c;
+}
 
 
 
@@ -103,5 +117,10 @@
     }
     .card-app{
         display: block;
+    }
+    #strategic .container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }
