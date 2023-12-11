@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: #0084fd;
+    color: #fff;
+    padding: 1rem;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+/* .logo,
+.nav{
+   
+} */
