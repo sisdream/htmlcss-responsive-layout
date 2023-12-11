@@ -200,6 +200,17 @@ button{
     width: 60%;
 }
 
+.arrow{
+    background-color: #9792e4;
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-block;
+    width: 57px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 25px;
+}
+
 
 
 /* SEZIONE TESTIMONIALS */
