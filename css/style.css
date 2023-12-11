@@ -40,7 +40,7 @@ li a{
 }
 
 button{
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 8px;
     border: 0;
 }
@@ -60,17 +60,26 @@ button{
     padding: 3rem 6rem;
 }
 
+#demo h3{
+    color: #0084fd;
+}
+
 .row{
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-weight: bold;
+
 }
 
 .cards{
     width: calc(100% / 3 - 6rem);
     background-color: #b5ddff;
-    padding: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    
 }
 
 .card-app{
@@ -82,7 +91,18 @@ button{
 .card-right{
     width: 50%;
 }
+.p-left{
+    margin: 20px 0;
+    line-height: 35px;
+}
 
+.btn{
+    background-color: #0084fd;
+    color: #fff;
+    border-radius: 15px;
+    padding: 6px 30px;
+    font-size: 20px;
+}
 /* SEZIONE STRATEGIC */
 
 #strategic{
