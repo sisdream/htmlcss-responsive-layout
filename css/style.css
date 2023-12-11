@@ -62,11 +62,13 @@ button{
 
 #demo h3{
     color: #0084fd;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 .row{
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
     flex-wrap: wrap;
     justify-content: space-between;
     font-weight: bold;
@@ -74,17 +76,24 @@ button{
 }
 
 .cards{
-    width: calc(100% / 3 - 6rem);
+    width: calc(100% / 3 - 2rem);
     background-color: #b5ddff;
-    border-radius: 10px;
-    padding: 2rem;
+    border-radius: 15px;
+    padding: 3rem 1rem;
     display: flex;
-    
+    align-items: center;
+    flex-direction: column;
 }
 
 .card-app{
-    width: calc(100% / 3 * 2);
+    width: calc(100% / 3 * 2 - 1rem);
+    background-color: #b5ddff;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 15px;
+    padding: 3rem 1rem 0;
+    
 }
 
 .card-left,
@@ -92,8 +101,8 @@ button{
     width: 50%;
 }
 .p-left{
-    margin: 20px 0;
-    line-height: 35px;
+    margin: 10px 0;
+    line-height: 30px;
 }
 
 .btn{
@@ -103,6 +112,29 @@ button{
     padding: 6px 30px;
     font-size: 20px;
 }
+
+.card-right{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.card-right img{
+    width: 50%;
+    display: block;
+    padding-top: 20px;
+}
+
+.icon{
+    font-size: 4rem;
+    color: #0084fd;
+}
+
+.p-card{
+    text-align: center;
+    line-height: 25px;
+}
+
 /* SEZIONE STRATEGIC */
 
 #strategic{
@@ -111,20 +143,64 @@ button{
 }
 
 #strategic .container{
+    text-align: start;
+    line-height: 30px;
     align-items: flex-end;
     justify-content: space-around;
+    padding: 0 8rem;
 }
 
-.planning,
+.planning{
+    color: #fff;
+    width: 50%;
+    margin: 4rem 0;
+}
+
+.img-plan1{
+    display: flex;
+    justify-content: center;
+}
+
+.img-plan1 img{
+    width: 70%;
+}
+
+.planning h2{
+    margin: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .developer{
-    width: 40%;
-    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    border-radius: 15%;
+    background-color: #fff;
+    color: #333333;
+    padding: 5rem 1rem;
+    margin: 4rem 0;
+
 }
 
-.deve{
-    background-color: #fff;
-    color: #6c6c6c;
+.developer h2{
+    margin: 10px 0;
+    font-weight: 800;
+    color: #000;
 }
+
+.img-plan2{
+    display: flex;
+    justify-content: center;
+}
+
+.img-plan2 img{
+    width: 60%;
+}
+
+
 
 /* SEZIONE TESTIMONIALS */
 
@@ -186,9 +262,6 @@ h1{
     width: 60%;
 }
 
-p{
-    color: #6c6c6c;
-}
 
 .right{
     width: 40%;
@@ -238,13 +311,29 @@ h3{
     .icona{
         display: block;
     }
+    .cards{
+        width: calc(100% / 3 - 2rem);
+    }
     .card-app{
         display: block;
     }
+    .card-right,
+    .card-left{
+        width: 100%;
+        justify-content: flex-start;
+    }
     #strategic .container{
+        padding: 0 2rem;
         flex-direction: column;
-        align-items: center;
-    }   
+    }
+    .planning{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .developer{
+        width: 100%;
+        margin: 1rem 0;
+    }  
     .card{
         width: calc(100% / 2 - 6rem);
     }
@@ -256,7 +345,28 @@ h3{
         width: 100%;
     }
     .card-app{
-        flex-direction: column;
+        width: 100%;
+    }
+    .p-left{
+        line-height: 20px;
+    }
+    .card-left,
+    .card-right{
+        width: 100%;
+    }
+    .card-right{
+        justify-content: center;
+    }
+    #strategic .container{
+        padding: 0 2rem;
+    }
+    .planning{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .developer{
+        width: 100%;
+        margin: 1rem 0;
     }
     .card-partner{
         flex-direction: column;
