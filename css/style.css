@@ -40,7 +40,7 @@
     justify-content: space-between;
 }
 
-.card{
+.cards{
     width: calc(100% / 3 - 6rem);
     background-color: #b5ddff;
     padding: 1rem;
@@ -56,7 +56,7 @@
     width: 50%;
 }
 
-/* SEZIONE STRATEGIA */
+/* SEZIONE STRATEGIC */
 
 #strategic{
     background-color: #9792e4;
@@ -83,7 +83,8 @@
 
 #testimonials{
     text-align: center;
-    color: #6c6c6c
+    color: #6c6c6c;
+    margin: 2rem 0;
 }
 
 h1{
@@ -103,31 +104,53 @@ h1{
     padding: 2rem;
 }
 
+/* SEZIONE BENEFITS */
 
-
-
-
-
-
-
-
-/* LATO RESPONSIVE */
-@media screen and (max-width: 576px) {
-    .nav{
-        display: none;
-    }
-    .icona{
-        display: block;
-    }
-    .card{
-        width: 100%;
-    }
-    .card-partner{
-        flex-direction: column;
-        gap: 1rem;
-    }
-
+#benefits{
+    background-color: #9792e4;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 6rem;
 }
+
+.card{
+    width: calc(100% / 3 - 6rem);
+}
+
+
+.card-fits{
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LATO RESPONSIVE TABLET */
 
 @media screen and (max-width: 768px) {
     .nav{
@@ -143,5 +166,29 @@ h1{
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }   
+    .card{
+        width: calc(100% / 2 - 6rem);
     }
+}
+
+/* LATO RESPONSIVE MOBILE */
+@media screen and (max-width: 576px) {
+    .cards{
+        width: 100%;
+    }
+    .card-app{
+        flex-direction: column;
+    }
+    .card-partner{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #benefict .card{
+       width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+
 }
