@@ -152,15 +152,30 @@ p{
 
 /* SEZIONE STARTED */
 
+#started{
+    background-color: #9792e4;
+    color: #fff;
+    text-align: center;
+}
 
+h3{
+    color: #6c6c6c;
+}
 
+.free{
+    color: #fdc15f;
+}
 
+/* SEZIONE LOREM */
 
+#lorem{
+    background-color: #333333;
+    text-align: center;
+}
 
-
-
-
-
+#lorem p{
+    color: #fff;
+}
 
 
 
