@@ -186,7 +186,6 @@ button{
 
 .developer h2{
     margin: 10px 0;
-    font-weight: 800;
     color: #000;
 }
 
@@ -269,7 +268,7 @@ h1{
 .fa-quote-right{
     position: absolute;
     bottom: 36%;
-    left: 63%;
+    left: 68%;
 }
 
 h4{
@@ -310,6 +309,7 @@ h2{
 h5{
     font-size: 1.2rem;
     margin: 15px 0;
+    text-align: start;
 }
 
 .text-fits{
@@ -328,19 +328,7 @@ h5{
     background-color: #9792e4;
     color: #fff;
     font-weight: bold;
-  
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* SEZIONE ABOUT */
 
@@ -351,18 +339,56 @@ h5{
 
 #about .container{
     justify-content: space-between;
-    
+    padding: 2rem 10rem;  
+}
+
+#about h2{
+    font-size: 3.5rem;
 }
 
 .left{
     width: 60%;
 }
 
+.left p{
+    color: #333333;
+    line-height: 45px;
+    margin: 2rem 0;
+}
 
 .right{
-    width: 40%;
+    width: 30%;
     text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+.img-about{
+    width: 250px;
+}
+
+.left-about{
+  position: absolute;
+  color: #9792e4;
+  font-size: 4rem;
+  top: 0;
+  right: 30%;
+}
+
+.right h5{
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fa-invision{
+    padding-right: 5px;
+}
+
+
+
+
 
 /* FOOTER */
 
@@ -450,13 +476,22 @@ h3{
     .img-card{
         height: auto ;
     }
+    #benefits{
+        padding: 2rem;
+    }
     .card{
-        width: calc(100% / 2 - 6rem);
+        width: calc(100% / 2 - 2rem);
     }
 }
 
 /* LATO RESPONSIVE MOBILE */
 @media screen and (max-width: 576px) {
+    #header .container{
+        padding:0 2rem;
+    }
+    #demo{
+        padding: 2rem 2rem;
+    }
     .cards{
         width: 100%;
     }
@@ -485,7 +520,6 @@ h3{
         margin: 1rem 0;
     }
     #testimonials .container{
-        padding: 1rem;
         align-items: center;
     }
     .card-partner{
