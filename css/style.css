@@ -109,6 +109,7 @@ button{
     border-radius: 15px;
     padding: 6px 30px;
     font-size: 20px;
+    border: 0;
 }
 
 .card-right{
@@ -165,7 +166,7 @@ button{
 }
 
 .planning h2{
-    margin: 80px;
+    padding: 2rem 0;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -256,6 +257,7 @@ h1{
     margin: 0 5rem;
     position: relative;
     width: 70%;
+    text-align: start;
 }
 
 .fa-quote-left{
@@ -267,7 +269,7 @@ h1{
 .fa-quote-right{
     position: absolute;
     bottom: 36%;
-    left: 82%;
+    left: 63%;
 }
 
 h4{
@@ -276,26 +278,69 @@ h4{
     left: 26%;
 }
 
-
-
 /* SEZIONE BENEFITS */
 
 #benefits{
     background-color: #9792e4;
     color: #fff;
     text-align: center;
-    padding: 2rem 6rem;
+    padding: 2rem 10rem;
 }
 
-.card{
-    width: calc(100% / 3 - 6rem);
+h2{
+    font-size: 2.3rem;
 }
 
 .card-fits{
+    width: calc(100% / 3 - 2rem);
     margin-top: 2rem;
-    background-color: #fff;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    color: #9792e4;
+    border-radius: 15px;
 }
+
+.title{
+    font-size: 3rem;
+}
+
+h5{
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.text-fits{
+    color: #6c6c6c;
+    font-weight: normal;
+    text-align: start;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-more{
+    border-radius: 15px;
+    padding: 6px 40px;
+    font-size: 16px;
+    border: 0;
+    background-color: #9792e4;
+    color: #fff;
+    font-weight: bold;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* SEZIONE ABOUT */
 
@@ -396,7 +441,7 @@ h3{
     }
     .fa-quote-right{
         bottom: 7%;
-        left: 72%;
+        left: 41%;
     }
     h4{
         bottom: 4%;
@@ -456,11 +501,11 @@ h3{
     }
     .fa-quote-left{
         top: 0;
-        left: 0;
+        right: 100%;
     }
     .fa-quote-right{
         bottom: 10%;
-        left: 65%;
+        left: 27%;
     }
     h4{
         bottom: 4%;
