@@ -19,7 +19,7 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
-    padding: 0 6rem;
+    padding: 0 8rem;
 }
 
 .nav{
@@ -72,7 +72,6 @@ button{
     flex-wrap: wrap;
     justify-content: space-between;
     font-weight: bold;
-
 }
 
 .cards{
@@ -92,8 +91,7 @@ button{
     flex-direction: row;
     align-items: flex-start;
     border-radius: 15px;
-    padding: 3rem 1rem 0;
-    
+    padding: 3rem 1rem 0;  
 }
 
 .card-left,
@@ -148,6 +146,7 @@ button{
     align-items: flex-end;
     justify-content: space-around;
     padding: 0 8rem;
+    margin: 0 4rem;
 }
 
 .planning{
@@ -180,9 +179,8 @@ button{
     border-radius: 15%;
     background-color: #fff;
     color: #333333;
-    padding: 5rem 1rem;
+    padding: 2rem 1rem;
     margin: 4rem 0;
-
 }
 
 .developer h2{
@@ -211,8 +209,6 @@ button{
     margin-top: 25px;
 }
 
-
-
 /* SEZIONE TESTIMONIALS */
 
 #testimonials{
@@ -223,20 +219,58 @@ button{
 
 h1{
     color: #9792e4;
+    font-size: 3rem;
 }
 
 #testimonials .container{
     flex-direction: column;
     gap: 2rem;
+    margin: 0 2rem;
 }
 
 .card-partner{
     background-color: #9792e4;
     color: #fff;
     display: flex;
-    justify-content: space-around;
     padding: 2rem;
+    border-radius: 15px;
 }
+
+.img-card{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.img-card img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.p-partner{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    position: relative;
+    width: 70%;
+}
+
+.fa-quote-left{
+    position: absolute;
+    top: 33%;
+    right: 100%;
+}
+
+.fa-quote-right{
+    position: absolute;
+    bottom: 36%;
+    left: 82%;
+}
+
+
 
 /* SEZIONE BENEFITS */
 
@@ -313,6 +347,9 @@ h3{
 
 
 
+
+
+
 /* LATO RESPONSIVE TABLET */
 
 @media screen and (max-width: 768px) {
@@ -344,7 +381,21 @@ h3{
     .developer{
         width: 100%;
         margin: 1rem 0;
-    }  
+    } 
+    #testimonials .container{
+        padding: 1rem;
+    }
+    .fa-quote-left{
+        top: 20%;
+        left: 4%;
+    }
+    .fa-quote-right{
+        bottom: 23%;
+        left: 91%;
+    }
+    .img-card{
+        height: auto ;
+    }
     .card{
         width: calc(100% / 2 - 6rem);
     }
@@ -379,9 +430,27 @@ h3{
         width: 100%;
         margin: 1rem 0;
     }
+    #testimonials .container{
+        padding: 1rem;
+        align-items: center;
+    }
     .card-partner{
         flex-direction: column;
         gap: 1rem;
+        align-items: center;
+        width: 70%;
+    }
+    .p-partner{
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    .fa-quote-left{
+        top: 0;
+        left: 0;
+    }
+    .fa-quote-right{
+        bottom: 0;
+        left: 65%;
     }
     #benefict .card{
        width: 100%;
