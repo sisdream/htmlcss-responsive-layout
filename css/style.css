@@ -234,12 +234,12 @@ h1{
     display: flex;
     padding: 2rem;
     border-radius: 15px;
+    position: relative;
 }
 
 .img-card{
     border-radius: 50%;
     width: 180px;
-    height: 180px;
     overflow: hidden;
 }
 
@@ -253,7 +253,7 @@ h1{
     font-size: 1.2rem;
     display: flex;
     align-items: center;
-    margin-left: 5rem;
+    margin: 0 5rem;
     position: relative;
     width: 70%;
 }
@@ -268,6 +268,12 @@ h1{
     position: absolute;
     bottom: 36%;
     left: 82%;
+}
+
+h4{
+    position: absolute;
+    bottom: 22%;
+    left: 26%;
 }
 
 
@@ -386,12 +392,15 @@ h3{
         padding: 1rem;
     }
     .fa-quote-left{
-        top: 20%;
-        left: 4%;
+        top: 9%;
     }
     .fa-quote-right{
-        bottom: 23%;
-        left: 91%;
+        bottom: 7%;
+        left: 72%;
+    }
+    h4{
+        bottom: 4%;
+        left: 40%;
     }
     .img-card{
         height: auto ;
@@ -443,14 +452,19 @@ h3{
     .p-partner{
         margin: 0;
         font-size: 1.1rem;
+        padding-bottom: 20px;
     }
     .fa-quote-left{
         top: 0;
         left: 0;
     }
     .fa-quote-right{
-        bottom: 0;
+        bottom: 10%;
         left: 65%;
+    }
+    h4{
+        bottom: 4%;
+        left: 30%;
     }
     #benefict .card{
        width: 100%;
