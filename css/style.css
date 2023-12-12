@@ -368,16 +368,12 @@ h5{
     flex-direction: column;
 }
 
-.img-about{
-    width: 250px;
-}
-
 .left-about{
   position: absolute;
   color: #9792e4;
-  font-size: 4rem;
+  font-size: 3rem;
   top: 0;
-  right: 5%;
+  right: 30%;
 }
 
 .right h5{
@@ -643,7 +639,7 @@ h5{
         width: 100%;
     }
     .left-about{
-        right: 50%;
+        right: 64%;
         top: 7%;
     }
     #started{
