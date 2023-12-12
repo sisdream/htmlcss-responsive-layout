@@ -43,10 +43,12 @@ button{
     border-radius: 15px;
     padding: 8px;
     border: 0;
+    cursor: pointer;
 }
 
 .icona{
     display: none;
+    cursor: pointer;
 }
 .fa-bars{
     font-size: 30px;
@@ -110,6 +112,7 @@ button{
     padding: 6px 30px;
     font-size: 20px;
     border: 0;
+    cursor: pointer;
 }
 
 .card-right{
@@ -207,6 +210,7 @@ button{
     line-height: 25px;
     text-align: center;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 /* SEZIONE TESTIMONIALS */
@@ -478,13 +482,16 @@ h5{
 
 @media screen and (max-width: 768px) {
     #header .container{
-        padding: 0 5rem;
+        padding: 0 2rem;
     }
     .nav{
         display: none;
     }
     .icona{
         display: block;
+    }
+    #demo{
+        padding: 2rem;
     }
     .cards{
         width: calc(100% / 3 - 2rem);
@@ -498,7 +505,7 @@ h5{
         justify-content: flex-start;
     }
     #strategic .container{
-        padding: 0 2rem;
+        padding:2rem;
         flex-direction: column;
     }
     .planning{
@@ -616,11 +623,15 @@ h5{
         bottom: 4%;
         left: 30%;
     }
-    #benefict .card{
-       width: 100%;
+    #benefits{
+        padding: 1rem;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
     }
     .card{
-        width: 100%;
+        width: 70%;
     }
     #about .container{
        flex-direction: column;
