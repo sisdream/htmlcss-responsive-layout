@@ -525,6 +525,10 @@ h5{
         bottom: 16%;
         left: 41%;
     }
+    .img-card{
+        display: flex;
+        flex-shrink: 0;
+    }
     h4{
         bottom: 4%;
         left: 40%;
